@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&family=Orbitron:wght@500&display=swap');
+
+.imgMe {
+    width: 90%;
+}
+
+.containerLP {
+    display: flex;
+    align-items: center;
+}
+
+.styleTxTh1 {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 16ch;
+    font-family: 'Orbitron', sans-serif;
+    font-size: xxx-large;
+    /* transition: color 0.1s ease-in-out 0.2s; */
+
+    animation: typing 2s steps(20),
+    blink .5s infinite step-end alternate;
+
+    overflow: hidden;
+}
+
+.styleTxTh1:hover {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% {border-color: transparent;}
+}
+
+.styleTxTh2 {
+    font-size: xx-large;
+    font-family: 'Krub', sans-serif;
+}
+
+.box2 {
+    margin-bottom: 5rem;
+} 
+
+@media only screen and (max-width: 480px) {
+    .containerLP {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .styleTxTh1 {
+        font-size: x-large;
+    }
+
+    .styleTxTh2 {
+        font-size: small;
+    }
+
+    .box2 {
+        margin-bottom: 0;
+    }
+  }

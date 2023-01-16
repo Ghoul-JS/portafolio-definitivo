@@ -1,0 +1,33 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.lateralItems {
+    display: flex;
+    flex-direction: column;
+}
+.items {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.items:hover {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.sections{
+    /* display: flex; */
+    padding-top: 3rem;
+}
+
+.about {
+    width: 100%;
+}
+
+.eachItem {
+    padding-top: 5px;
+}
