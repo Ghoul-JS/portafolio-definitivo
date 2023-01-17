@@ -13,7 +13,8 @@
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 16ch;
+    /* width: 16ch; */
+    width: 100%;
     font-family: 'Orbitron', sans-serif;
     font-size: xxx-large;
     /* transition: color 0.1s ease-in-out 0.2s; */
@@ -62,6 +63,6 @@
     }
 
     .box2 {
-        margin-bottom: 0;
+        margin-bottom: 0    ;
     }
   }
