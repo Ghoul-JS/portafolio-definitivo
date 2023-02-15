@@ -49,9 +49,10 @@
 
 @media only screen and (max-width: 480px) {
     .containerLP {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 1rem;
     }
 
     .styleTxTh1 {
@@ -59,10 +60,14 @@
     }
 
     .styleTxTh2 {
-        font-size: small;
+        font-size: xx-large;
     }
 
     .box2 {
-        margin-bottom: 0    ;
+        margin-bottom: 0;
+    }
+
+    .imgMe {
+        width: 100%;
     }
   }

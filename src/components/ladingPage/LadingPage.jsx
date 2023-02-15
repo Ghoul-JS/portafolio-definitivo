@@ -11,7 +11,6 @@ export default function LadingPage() {
                     <h5 className={style.styleTxTh2}>Hi my name is José!  🖖</h5>
                     <h1 className={style.styleTxTh1}>I'm FullStack Developer</h1>
                 </div>
-
             </div>
         </>
     )
