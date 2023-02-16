@@ -33,7 +33,7 @@ function Home(props) {
         KOK
       </Typography>
       <Divider />
-      <List>
+      <List className={style.listTool}>
         <div className={style.lateralItems}>
           <a className={style.items} href="#">
             Home
@@ -47,9 +47,9 @@ function Home(props) {
           <a className={style.items} href="#skills">
             Skill
           </a>
-          <a className={style.items} href="#contact">
+          {/* <a className={style.items} href="#contact">
             Contact
-          </a>
+          </a> */}
         </div>
       </List>
     </Box>
@@ -99,9 +99,9 @@ function Home(props) {
                 <a className={style.items} href="#skills">
                   Skill
                 </a>
-                <a className={style.items} href="#contact">
+                {/* <a className={style.items} href="#contact">
                   Contact
-                </a>
+                </a> */}
               </Box>
             </div>
           </div>
@@ -151,9 +151,9 @@ function Home(props) {
             <Skills />
           </section>
 
-          <section id="contact">
+          {/* <section id="contact">
             <Contact />
-          </section>
+          </section> */}
         </div>
       </Box>
     </Box>

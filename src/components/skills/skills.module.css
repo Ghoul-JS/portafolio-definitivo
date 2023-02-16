@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&family=Orbitron:wght@500&display=swap');
+
+.skillTitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: xxx-large;
+}
+
+.iconSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+}
+
+.iconSkills > div {
+    flex-basis: 10%;
+
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+}
+
+.iconSkills > div:hover {
+    --escala: 1.2;
+    cursor:pointer;
+}
+
+.iconSkills > div > img {
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .iconSkills {
+        width: 100%;
+        margin-left: -3px;
+    }
+
+    .iconSkills > div > img {
+        width: 120px;
+        height: 120px;
+        padding: 0.5rem;
+    }
+}

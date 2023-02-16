@@ -7,6 +7,10 @@
 .lateralItems {
     display: flex;
     flex-direction: column;
+    
+}
+.listTool {
+    padding-right: 1px;
 }
 .items {
     color: black;
