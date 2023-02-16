@@ -35,9 +35,12 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .skillTitle {
+        margin-left: -29px;
+    }
     .iconSkills {
         width: 100%;
-        margin-left: -3px;
+        margin-left: -29px;
     }
 
     .iconSkills > div > img {
