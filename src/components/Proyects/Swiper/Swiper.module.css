@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&family=Orbitron:wght@500&display=swap');
+.sliders {
+    display: flex;
+    flex-direction: column; 
+}
+
+.slide1 > p {
+    display: flex;
+    width: 100%;
+    height: 100%;   
+}
+.pSlider {
+    color: white;
+    background: rgb(117, 113, 113);
+    margin: unset;
+    padding: 0.5rem;
+}
+.swiper1 {
+    background-image: url("https://swiperjs.com/demos/images/nature-1.jpg");
+}
+
+.containerIcons {
+    display: flex;
+}
+
+.iconTech {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(175 170 170);
+    color: white;
+    font-family: 'Krub', sans-serif;;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

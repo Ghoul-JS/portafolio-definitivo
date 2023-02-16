@@ -66,6 +66,9 @@
         padding-top: 1rem;
         align-items: center;
     }
+    .aboutTxT {
+        margin-left: -25px;
+    }
 
     .imgDiv{
         width: 100%;

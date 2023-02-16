@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import style from "./home.module.css";
 import LadingPage from "../ladingPage/LadingPage";
 import About from "../about/About";
+import Proyect from "../Proyects/Proyect";
 import Skills from "../skills/Skills";
 import Contact from "../Contact/Contact";
 
@@ -39,6 +40,9 @@ function Home(props) {
           </a>
           <a className={style.items} href="#about">
             About
+          </a>
+          <a className={style.items} href="#proyects">
+            Proyects
           </a>
           <a className={style.items} href="#skills">
             Skill
@@ -77,7 +81,7 @@ function Home(props) {
                 component="div"
                 sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
               >
-                KOK
+                Ghoul-JS
               </Typography>
             </div>
 
@@ -88,6 +92,9 @@ function Home(props) {
                 </a>
                 <a className={style.items} href="#about">
                   About
+                </a>
+                <a className={style.items} href="#proyects">
+                  Proyects
                 </a>
                 <a className={style.items} href="#skills">
                   Skill
@@ -134,6 +141,10 @@ function Home(props) {
 
           <section id="about">
             <About />
+          </section>
+
+          <section id="proyects">
+            <Proyect />
           </section>
 
           <section id="skills">
