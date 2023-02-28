@@ -23,6 +23,12 @@ function Home(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
+  const handleClick = (e, seccionId) => {
+    e.preventDefault();
+    const seccion = document.querySelector(seccionId);
+    seccion.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
@@ -30,30 +36,32 @@ function Home(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        KOK
+        Ghoul-JS
       </Typography>
       <Divider />
       <List className={style.listTool}>
         <div className={style.lateralItems}>
-          <a className={style.items} href="#">
+          <a className={style.items} href="#home" >
             Home
           </a>
           <a className={style.items} href="#about">
             About
           </a>
           <a className={style.items} href="#proyects">
-            Proyects
+            Projects
           </a>
           <a className={style.items} href="#skills">
             Skill
           </a>
-          {/* <a className={style.items} href="#contact">
+          <a className={style.items} href="#contact">
             Contact
-          </a> */}
+          </a>
         </div>
       </List>
     </Box>
   );
+
+
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
@@ -87,21 +95,21 @@ function Home(props) {
 
             <div className={style.eachItem}>
               <Box sx={{ display: { xs: "none", sm: "block" } }}>
-                <a className={style.items} href="#">
+                <a className={style.items} href="#home" onClick={(e) => handleClick(e, '#home')}>
                   Home
                 </a>
-                <a className={style.items} href="#about">
+                <a className={style.items} href="#about" onClick={(e) => handleClick(e, '#about')}>
                   About
                 </a>
-                <a className={style.items} href="#proyects">
-                  Proyects
+                <a className={style.items} href="#proyects" onClick={(e) => handleClick(e, '#proyects')}>
+                  Projects
                 </a>
-                <a className={style.items} href="#skills">
+                <a className={style.items} href="#skills" onClick={(e) => handleClick(e, '#skills')}>
                   Skill
                 </a>
-                {/* <a className={style.items} href="#contact">
+                <a className={style.items} href="#contact" onClick={(e) => handleClick(e, '#skills')}>
                   Contact
-                </a> */}
+                </a>
               </Box>
             </div>
           </div>
@@ -134,7 +142,7 @@ function Home(props) {
         {/* <Toolbar /> */}
         <div className={style.sections}>
           <div>
-            <section id="#">
+            <section id="home">
               <LadingPage />
             </section>
           </div>
@@ -151,9 +159,9 @@ function Home(props) {
             <Skills />
           </section>
 
-          {/* <section id="contact">
+          <section id="contact">
             <Contact />
-          </section> */}
+          </section>
         </div>
       </Box>
     </Box>

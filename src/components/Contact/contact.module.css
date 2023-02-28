@@ -1,0 +1,38 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+  
+.formulario__grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+  
+.formulario__label {
+    font-weight: bold;
+}
+  
+.formulario__input {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+  
+.formulario__input:focus {
+    outline: none;
+    border-color: #3F51B5;
+    box-shadow: 0px 0px 2px 2px #E3EAF6;
+}
+  
+.formulario__boton {
+    background-color: #3F51B5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
