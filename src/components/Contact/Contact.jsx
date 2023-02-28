@@ -1,30 +1,39 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import styles from './contact.module.css';
+import emailjs from "@emailjs/browser";
 
 function Contact() {
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    theme: '',
-    message: ''
-  });
+    const form = useRef()
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // código para enviar el formulario
-    console.log('Formulario enviado');
+    emailjs
+    .sendForm(
+      "service_tvqwy98",
+      "template_kyxkra5",
+      form.current,
+      "W8TlXjKW6T53a08_B"
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    alert("se envio tu mensaje")
+    e.target.reset();
   };
 
   return (
-    <form className={styles.formulario} onSubmit={handleSubmit}>
+    <form className={styles.formulario} onSubmit={handleSubmit} ref={form}>
       <div className={styles.formulario__grupo}>
         <label htmlFor="name" className={styles.formulario__label}>Nombre:</label>
         <input
           type="text"
           id="name"
           name="name"
-          value={form.name}
-          onChange={(e) => setForm(e.target.value)}
+          placeholder='Tu nombre'
           className={styles.formulario__input}
           required
         />
@@ -35,8 +44,7 @@ function Contact() {
           type="email"
           id="email"
           name="email"
-          value={form.email}
-          onChange={(e) => setForm(e.target.value)}
+          placeholder='Tu email'
           className={styles.formulario__input}
           required
         />
@@ -47,8 +55,7 @@ function Contact() {
           type="text"
           id="theme"
           name="theme"
-          value={form.theme}
-          onChange={(e) => setForm(e.target.value)}
+          placeholder='Tema'
           className={styles.formulario__input}
           required
         />
@@ -58,8 +65,7 @@ function Contact() {
         <textarea
           id="message"
           name="message"
-          value={form.message}
-          onChange={(e) => setForm(e.target.value)}
+          placeholder='Mensaje'
           className={styles.formulario__input}
           required
         />
