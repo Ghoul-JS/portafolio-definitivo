@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -25,7 +24,7 @@ export default function App() {
         <SwiperSlide>
           <div className={style.sliders}>
             <a href="https://online-nature-pf-front-git-main-ezeluiten.vercel.app">
-              <img src={proyect1} />
+              <img src={proyect1} alt="project1"/>
             </a>
             <div className={style.iconTech}>
                 <p>Online nature</p>
@@ -38,7 +37,7 @@ export default function App() {
         <SwiperSlide>
           <div className={style.sliders}>
             <a href="https://pi-frontend.vercel.app">
-              <img src={proyect2} />
+              <img src={proyect2} alt="project2"/>
             </a>
             <div className={style.iconTech}>
                 <p>Level down</p>
@@ -51,7 +50,7 @@ export default function App() {
         <SwiperSlide>
           <div className={style.sliders}>
             <a href="https://rick-and-morty-app-tan.vercel.app">
-              <img src={proyect3} />
+              <img src={proyect3} alt="project3"/>
             </a>
             <div className={style.iconTech}>
                 <p>Rick and Morty</p>
@@ -64,7 +63,7 @@ export default function App() {
         <SwiperSlide>
           <div className={style.sliders}>
             <a href="https://trivia-app-beryl.vercel.app">
-              <img src={proyect4} />
+              <img src={proyect4} alt="project4"/>
             </a>
             <div className={style.iconTech}>
                 <p>Trivia</p>
@@ -77,7 +76,7 @@ export default function App() {
         <SwiperSlide>
           <div className={style.sliders}>
             <a href="https://crud-autos-app.vercel.app">
-              <img src={proyect5} />
+              <img src={proyect5} alt="project5"/>
             </a>
             <div className={style.iconTech}>
                 <p>CRUD autos</p>
@@ -90,7 +89,7 @@ export default function App() {
         <SwiperSlide>
           <div className={style.sliders}>
             <a href="https://ghoul-js-periodic-table.vercel.app">
-              <img src={proyect6} />
+              <img src={proyect6} alt="project6"/>
             </a>
             <div className={style.iconTech}>
                 <p>Tabla periodica</p>

@@ -107,7 +107,7 @@ function Home(props) {
                 <a className={style.items} href="#skills" onClick={(e) => handleClick(e, '#skills')}>
                   Skill
                 </a>
-                <a className={style.items} href="#contact" onClick={(e) => handleClick(e, '#skills')}>
+                <a className={style.items} href="#contact" onClick={(e) => handleClick(e, '#contact')}>
                   Contact
                 </a>
               </Box>

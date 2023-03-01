@@ -1,13 +1,35 @@
-.formulario {
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&family=Orbitron:wght@500&display=swap');
+
+.containerForm {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.formulario {
+    /* display: flex;
+    flex-direction: column; */
+    width: 60%;
     gap: 1rem;
+}
+
+.firstRowForm {
+    display: flex;
+    justify-content: space-between;
 }
   
 .formulario__grupo {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.formulario__grupoR1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 48%;
 }
   
 .formulario__label {
@@ -35,4 +57,20 @@
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.contactTxT {
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: xxx-large;
+}
+
+@media only screen and (max-width: 480px) {
+    .containerForm {
+        width: 100%;
+        padding-right: 2rem;
+    }
 }
