@@ -81,11 +81,13 @@
     }
 
     .textDiv > h2 {
-        width: 90%;
+        width: 80%;
+        text-align: center;
     }
 
     .textDiv > p {
-        width: 90%;
+        width: 80%;
+        text-align: center;
     }
 
     /* .icons {
