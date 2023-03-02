@@ -34,13 +34,13 @@
     padding: 1rem;
 }
 
-@media only screen and (max-width: 480px) {
-    .skillTitle {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* .skillTitle {
         margin-left: -29px;
-    }
+    } */
     .iconSkills {
         width: 100%;
-        margin-left: -29px;
+        /* margin-left: -29px; */
     }
 
     .iconSkills > div > img {
